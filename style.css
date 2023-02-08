@@ -19,11 +19,17 @@ body {
     overflow: hidden;
 }
 
+
+/* Prevents unwanted scroll space when scroll FX used. */
+
 a,
 button {
     transition: background .3s ease-in-out;
-    outline: none !important;
+    outline: none!important;
 }
+
+
+/* Prevent blue selection glow on Chrome and Safari */
 
 a:hover {
     text-decoration: none;
@@ -31,7 +37,7 @@ a:hover {
 }
 
 .scroll-fx-lock-init {
-    position: fixed !important;
+    position: fixed!important;
     top: 0;
     bottom: 0;
     left: : 0;
@@ -39,13 +45,22 @@ a:hover {
     z-index: 99999;
 }
 
+
+/* ScrollFX Lock */
+
 .blocs-grid-container {
-    display: grid !important;
+    display: grid!important;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     column-gap: 1.5rem;
     row-gap: 1.5rem;
 }
+
+
+/* CSS Grid */
+
+
+/* Preloader */
 
 .page-preloader {
     position: fixed;
@@ -75,6 +90,10 @@ a:hover {
     }
 }
 
+
+/* = Blocs
+-------------------------------------------------------------- */
+
 .bloc {
     width: 100%;
     clear: both;
@@ -93,6 +112,9 @@ a:hover {
     padding-right: 0;
 }
 
+
+/* Sizes */
+
 .bloc-lg {
     padding: 100px 20px;
 }
@@ -104,6 +126,10 @@ a:hover {
 .bloc-sm {
     padding: 20px;
 }
+
+
+/* = Full Screen Blocs 
+-------------------------------------------------------------- */
 
 .bloc-fill-screen {
     min-height: 100vh;
@@ -139,6 +165,32 @@ a:hover {
     align-self: flex-end;
 }
 
+
+/* Background Styles */
+
+.bg-center,
+.bg-l-edge,
+.bg-r-edge,
+.bg-t-edge,
+.bg-b-edge,
+.bg-tl-edge,
+.bg-bl-edge,
+.bg-tr-edge,
+.bg-br-edge,
+.bg-repeat {
+    -webkit-background-size: auto!important;
+    -moz-background-size: auto!important;
+    -o-background-size: auto!important;
+    background-size: auto!important;
+}
+
+.bg-center {
+    -webkit-background-size: auto;
+}
+
+
+/* Background Textures */
+
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -154,9 +206,16 @@ a:hover {
     background-size: 280px 280px;
 }
 
+.texture-darken::before {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .texture-darken-strong::before {
     background: rgba(0, 0, 0, 0.8);
 }
+
+
+/* Background Effects */
 
 .parallax__container {
     clip: rect(0, auto, auto, 0);
@@ -181,6 +240,9 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+/* Dark theme */
 
 .d-bloc {
     color: rgba(255, 255, 255, .7);
@@ -274,6 +336,9 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
+
+/* Light theme */
+
 .d-bloc .card,
 .l-bloc {
     color: rgba(0, 0, 0, .5);
@@ -343,9 +408,16 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
+
+/* = NavBar
+-------------------------------------------------------------- */
+
 .navbar-dark .nav .dropdown-menu .nav-link {
     color: rgb(64, 64, 64);
 }
+
+
+/* Navbar Icon */
 
 .svg-menu-icon {
     fill: none;
@@ -381,15 +453,18 @@ a:hover {
 }
 
 .navbar-toggler-icon {
-    background: none !important;
+    background: none!important;
     pointer-events: none;
     width: 33px;
     height: 33px;
 }
 
 .navbar-toggle.menu-icon-thin-bars {
-    margin-top: 4px !important;
+    margin-top: 4px!important;
 }
+
+
+/* Handle Multi Level Navigation */
 
 .dropdown-menu .dropdown-menu {
     border: none
@@ -435,6 +510,10 @@ a:hover {
     }
 }
 
+
+/* = Buttons
+-------------------------------------------------------------- */
+
 .btn-d,
 .btn-d:hover,
 .btn-d:focus {
@@ -442,27 +521,42 @@ a:hover {
     background: rgba(0, 0, 0, .3);
 }
 
+
+/* Prevent ugly blue glow on chrome and safari */
+
 button {
-    outline: none !important;
+    outline: none!important;
 }
 
 .btn-wire {
-    background: transparent !important;
+    background: transparent!important;
     border: 2px solid transparent;
 }
 
 .btn-wire:hover {
-    background: transparent !important;
+    background: transparent!important;
     border: 2px solid transparent;
 }
 
+
+/* = Icons
+-------------------------------------------------------------- */
+
 .icon-md {
-    font-size: 30px !important;
+    font-size: 30px!important;
 }
+
+
+/* = Text & Icon Styles
+-------------------------------------------------------------- */
 
 .sm-shadow {
     text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 }
+
+
+/* = Text Widths
+-------------------------------------------------------------- */
 
 .text-w-80 {
     max-width: 80%;
@@ -498,6 +592,10 @@ button {
     border-radius: 0 0 29px 29px;
 }
 
+
+/* = Classic Dividers
+-------------------------------------------------------------- */
+
 .divider-h {
     min-height: 1px;
     background-color: rgba(0, 0, 0, .2);
@@ -519,6 +617,9 @@ button {
     fill-rule: evenodd;
     stroke-linecap: round;
 }
+
+
+/* ScrollToTop button */
 
 .scrollToTop {
     width: 36px;
@@ -545,6 +646,10 @@ button {
     fill-rule: evenodd;
     stroke-linecap: round;
 }
+
+
+/* = Custom Styling
+-------------------------------------------------------------- */
 
 h1,
 h2,
@@ -592,7 +697,7 @@ a {
 .box {
     padding: 40px 40px 40px 40px;
     border-style: double;
-    border-color: var(--swatch-var-Black) !important;
+    border-color: var(--swatch-var-Black)!important;
     border-width: 10px 10px 10px 10px;
     width: 100%;
     background-color: var(--swatch-var-Primary);
@@ -637,21 +742,21 @@ a {
 .custom-field {
     background-color: transparent;
     border-style: solid;
-    border-color: var(--swatch-var-Primary) !important;
+    border-color: var(--swatch-var-Primary)!important;
     border-radius: 0px 0px 0px 0px;
     margin-bottom: 20px;
     border-width: 2px 2px 2px 2px;
     caret-color: var(--swatch-var-Primary);
-    color: var(--swatch-var-White) !important;
+    color: var(--swatch-var-White)!important;
 }
 
 .custom-field::placeholder {
-    color: var(--swatch-var-Primary) !important;
+    color: var(--swatch-var-Primary)!important;
 }
 
 .custom-field:focus {
     background-color: transparent;
-    color: var(--swatch-var-White) !important;
+    color: var(--swatch-var-White)!important;
 }
 
 .name-heading {
@@ -680,12 +785,26 @@ h1 {
     height: 0px;
 }
 
+
+/* = Colour
+-------------------------------------------------------------- */
+
+
+/* Swatch Variables */
+
 :root {
     --swatch-var-White-50%: rgba(255, 255, 255, 0.50);
     --swatch-var-White: rgba(255, 255, 255, 1.00);
     --swatch-var-Primary: rgba(33, 62, 149, 1.00);
     --swatch-var-Black: rgba(15, 15, 15, 1.00);
     --swatch-var-Black-50%: rgba(15, 15, 15, 0.50);
+}
+
+
+/* Background colour styles */
+
+.bgc-3409 {
+    background-color: var(--swatch-var-Primary);
 }
 
 .bgc-1165 {
@@ -696,53 +815,58 @@ h1 {
     background-color: var(--swatch-var-White);
 }
 
+
+/* Text colour styles */
+
 .tc-3409 {
-    color: var(--swatch-var-Primary) !important;
+    color: var(--swatch-var-Primary)!important;
 }
 
 .tc-6728 {
-    color: var(--swatch-var-White) !important;
+    color: var(--swatch-var-White)!important;
 }
 
 .tc-3648 {
-    color: var(--swatch-var-White-50%) !important;
+    color: var(--swatch-var-White-50%)!important;
 }
 
 .tc-1165 {
-    color: var(--swatch-var-Black) !important;
+    color: var(--swatch-var-Black)!important;
 }
 
 .tc-5561 {
-    color: var(--swatch-var-Black-50%) !important;
+    color: var(--swatch-var-Black-50%)!important;
 }
 
+
+/* Link colour styles */
+
 .ltc-3409 {
-    color: var(--swatch-var-Primary) !important;
+    color: var(--swatch-var-Primary)!important;
 }
 
 .ltc-3409:hover {
-    color: #000B62 !important;
+    color: #000B62!important;
 }
 
-.bg-Inspiration3 {
-    background-image: url("img/Inspiration3.jpeg");
-    background-image: -webkit-image-set(url("img/Inspiration3.webp") 1x, url("img/Inspiration3.webp") 2x);
-    background-image: image-set(url("img/Inspiration3.jpeg") 1x, url("img/Inspiration3.jpeg") 2x, url("img/Inspiration3.webp") 1x, url("img/Inspiration3.webp") 2x);
+
+/* Bloc image backgrounds */
+
+.bg-63e362b04757feff332b58d2 {
+    background-image: url("https://pic.imgdb.cn/item/63e362b04757feff332b58d2.jpg");
 }
 
-.bg-Inspiration2 {
-    background-image: url("img/Inspiration2.jpeg");
-    background-image: -webkit-image-set(url("img/Inspiration2.webp") 1x, url("img/Inspiration2.webp") 2x);
-    background-image: image-set(url("img/Inspiration2.jpeg") 1x, url("img/Inspiration2.jpeg") 2x, url("img/Inspiration2.webp") 1x, url("img/Inspiration2.webp") 2x);
+.bg-63e362b04757feff332b58a9 {
+    background-image: url("https://pic.imgdb.cn/item/63e362b04757feff332b58a9.jpg");
 }
 
-.bg-logo {
-    background-image: url("img/logo.png");
-    background-image: -webkit-image-set(url("img/logo.webp") 1x, url("img/logo.webp") 2x);
-    background-image: image-set(url("img/logo.png") 1x, url("img/logo.png") 2x, url("img/logo.webp") 1x, url("img/logo.webp") 2x);
-    background-image: -webkit-image-set(url("img/logo.webp") 1x, url("img/logo.webp") 2x);
-    background-image: image-set(url("img/logo.png") 1x, url("img/logo.png") 2x, url("img/logo.webp") 1x, url("img/logo.webp") 2x);
+.bg-63e3638c4757feff332cd9c4 {
+    background-image: url("https://pic.imgdb.cn/item/63e3638c4757feff332cd9c4.png");
 }
+
+
+/* = Bloc Padding Multi Breakpoint
+-------------------------------------------------------------- */
 
 @media (min-width: 576px) {
     .bloc-xxl-sm {
@@ -807,6 +931,10 @@ h1 {
     }
 }
 
+
+/* = Mobile adjustments 
+-------------------------------------------------------------- */
+
 @media (max-width: 1024px) {
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
@@ -825,6 +953,7 @@ h1 {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+    /* iPhone X Notch Support*/
     .bloc-group,
     .bloc-group .bloc {
         display: block;
