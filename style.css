@@ -40,7 +40,7 @@ a:hover {
     position: fixed!important;
     top: 0;
     bottom: 0;
-    left: : 0;
+    left: 0;
     right: 0;
     z-index: 99999;
 }
@@ -853,15 +853,15 @@ h1 {
 /* Bloc image backgrounds */
 
 .bg-63e362b04757feff332b58d2 {
-    background-image: url("https://pic.imgdb.cn/item/63e362b04757feff332b58d2.jpg");
+    background-image: url("https://r2.keldos.me/63e362b04757feff332b58d2.jpg.jpeg");
 }
 
 .bg-63e362b04757feff332b58a9 {
-    background-image: url("https://pic.imgdb.cn/item/63e362b04757feff332b58a9.jpg");
+    background-image: url("https://r2.keldos.me/63e362b04757feff332b58a9.jpeg");
 }
 
 .bg-63e3638c4757feff332cd9c4 {
-    background-image: url("https://pic.imgdb.cn/item/63e3638c4757feff332cd9c4.png");
+    background-image: url("https://r2.keldos.me/63e3638c4757feff332cd9c4.png");
 }
 
 
